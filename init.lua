@@ -26,7 +26,7 @@ spec "user.diffview"
 spec "user.indentline"
 spec "user.netrw"
 spec "user.project"
-spec "user.toggleterm"
+spec "user.toggleterm2"
 spec "user.bufdelete"
 require "user.lazy"
 vim.cmd[[colorscheme tokyonight-moon]]
