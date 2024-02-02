@@ -60,7 +60,8 @@ function M.config()
     "yamlls",
     "marksman",
     "tailwindcss",
-    "rust_analyzer"
+    "gopls"
+    -- "rust_analyzer"
   }
 
   local default_diagnostic_config = {

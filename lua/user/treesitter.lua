@@ -1,7 +1,7 @@
 local M = {
   "nvim-treesitter/nvim-treesitter",
   event = { "BufReadPost", "BufNewFile" },
-  commit = "afa103385a2b5ef060596ed822ef63276ae88016",
+  -- commit = "afa103385a2b5ef060596ed822ef63276ae88016",
   build = ":TSUpdate",
   dependencies = {
     {
@@ -28,8 +28,8 @@ local M = {
 }
 function M.config()
   require("nvim-treesitter.configs").setup {
-    ensure_installed = { "lua", "markdown", "markdown_inline", "bash", "python" }, -- put the language you want in this array
-    ignore_install = { "" },
+    ensure_installed = { "lua", "markdown", "markdown_inline", "bash", "python", "rust" }, -- put the language you want in this array
+    ignore_install = { },
     sync_install = false,
     highlight = {
       enable = true,
