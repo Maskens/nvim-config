@@ -29,5 +29,7 @@ spec "user.project"
 spec "user.toggleterm"
 spec "user.bufdelete"
 spec "user.rust-tools"
+spec "user.nvim-dap"
+spec "user.norg"
 require "user.lazy"
 vim.cmd[[colorscheme tokyonight-moon]]
