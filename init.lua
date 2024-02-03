@@ -1,8 +1,9 @@
 require "user.launch"
 require "user.options"
 require "user.keymaps"
-require "user.autocmds"
-spec "user.gruvbox"
+-- require "user.autocmds"
+-- spec "user.gruvbox"
+spec "user.themes.kanagawa"
 spec "user.treesitter"
 spec "user.mason"
 spec "user.lspconfig"
@@ -18,4 +19,4 @@ spec "user.bufdelete"
 spec "user.rust-tools"
 spec "user.nvim-dap"
 require "user.lazy"
-vim.cmd[[colorscheme gruvbox]]
+vim.cmd[[colorscheme kanagawa-dragon]]
