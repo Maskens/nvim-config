@@ -6,9 +6,14 @@ local M = {
     transparent = true,
     colors = {
       theme = {
+        dragon = {
+          ui = {
+            --bg_p1 = "#223249"
+          }
+        },
         all = {
           ui = {
-            bg_gutter = "none"
+            bg_gutter = "none",
           }
         }
       }
