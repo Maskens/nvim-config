@@ -35,7 +35,8 @@ function M.config()
       "markdown_inline",
       "bash",
       "python",
-      "rust"
+      "rust",
+      "c"
     }, -- put the language you want in this array
     auto_install = true,
     ignore_install = { },

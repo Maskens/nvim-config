@@ -60,7 +60,8 @@ function M.config()
     "yamlls",
     "marksman",
     "tailwindcss",
-    "gopls"
+    "gopls",
+    "clangd"
     -- "rust_analyzer"
   }
 

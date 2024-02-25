@@ -12,7 +12,7 @@ function M.config()
     ---Whether the cursor should stay at its position
     sticky = true,
     ---Lines to be ignored while (un)comment
-    ignore = nil,
+    ignore = 'nil',
     ---LHS of toggle mappings in NORMAL mode
     toggler = {
       ---Line-comment toggle keymap
@@ -45,13 +45,7 @@ function M.config()
       extra = true,
     },
     ---Function to call before (un)comment
-    pre_hook = function(...)
-      local loaded, ts_comment = pcall(require, "ts_context_commentstring.integrations.comment_nvim")
-      if loaded and ts_comment then
-        return ts_comment.create_pre_hook()(...)
-      end
-    end,
-    ---Function to call after (un)comment
+    pre_hook = nil,    ---Function to call after (un)comment
     post_hook = nil,
   }
 end
