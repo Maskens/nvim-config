@@ -1,6 +1,6 @@
 local M = {
   'mrcjkb/rustaceanvim',
-  version = '^3', -- Recommended
+  version = '^4', -- Recommended
   ft = { 'rust' },
 }
 
@@ -56,10 +56,10 @@ vim.g.rustaceanvim = {
   dap = {
     adapter = function ()
       local mason_registry = require("mason-registry")
-      local codelldb = mason_registry.get_package("css-lsp")
+      local codelldb = mason_registry.get_package("codelldb")
       local extension_path = codelldb:get_install_path() .. "/extension/"
-      local codelldb_path = extension_path .. 'adapter/codelldb'
-      local liblldb_path = extension_path .. "lldb/liblldb.dylib"
+      local codelldb_path = extension_path .. 'adapter/scripts/codelldb'
+      local liblldb_path = extension_path .. "lldb/lib/liblldb.dylib"
       local cfg = require("rustaceanvim.config")
       return cfg.get_codelldb_adapter(codelldb_path, liblldb_path)
     end

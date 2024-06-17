@@ -1,6 +1,7 @@
 require "user.launch"
 require "user.options"
 require "user.keymaps"
+spec "user.nvim-nio"
 spec "user.themes.kanagawa"
 spec "user.treesitter"  -- better highlighning etc
 spec "user.mason"
